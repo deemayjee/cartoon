@@ -23,6 +23,7 @@ function Categories() {
         <div>
             <div className="category-cont">
                 <div className="row-1">
+                    <Router>
                     <div>
                         <Link className="category-image" to="../character">
                             <img src="https://www.itl.cat/pngfile/big/86-869349_rick-and-morty-iphone-7-wallpaper-2019-cute.jpg" height="500" width="400" alt={"character"} className="single-category"/>
@@ -43,7 +44,7 @@ function Categories() {
                             <h2 className="category-title">EPISODE</h2> 
                         </Link>
                     </div> 
-                           
+                    </Router>
                 </div>             
             </div>
         </div>
