@@ -15,7 +15,7 @@ import Characters from './pages/Characters';
 function App() {
   return (
   
-    <Router>
+    <Router basename='/'>
       
       <div>
         <div className="App-cont">
@@ -30,8 +30,9 @@ function App() {
           <Route exact path="/character" component={Characters} />
           <Route path="/locations" component={Locations} />
           <Route path="/episodes" component={Episodes} />
-          <Route exact path="#" component={Categories} />
+          <Route exact path="/" component={Categories} />
         </Switch>
+
       </div>
       <Footer />
     </Router>
