@@ -15,8 +15,7 @@ import Characters from './pages/Characters';
 function App() {
   return (
   
-    <Router basename='/'>
-      
+    <Router basename="/">
       <div>
         <div className="App-cont">
             <div className="logo">
