@@ -8,8 +8,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 
 import Character from './pages/Characters';
-import Locations from './pages/Location';
-import Episodes from './pages/Episode';
+import Locations from './pages/Locations';
+import Episodes from './pages/Episodes';
+import Characters from './pages/Characters';
 
 
 function App() {
@@ -27,7 +28,7 @@ function App() {
         </div>
 
         <Switch>
-          <Route exact path="/character" component={Character} />
+          <Route exact path="/character" component={Characters} />
           <Route path="/locations" component={Locations} />
           <Route path="/episodes" component={Episodes} />
           <Route exact path="#" component={Categories} />

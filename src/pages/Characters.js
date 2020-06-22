@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import axios from 'axios';
 import Card from  '../components/Card';
 
-function Character() {
+function Characters() {
 
     const [people, setPeople] = useState([]);
 
@@ -30,4 +30,4 @@ function Character() {
     );
 }
 
-export default Character;
+export default Characters;
