@@ -1,25 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
+import Categories from './components/Categories';
+import Footer from './components/Footer';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
+import People from "./pages/Characters";
+import Films from "./pages/Location";
+import Species from "./pages/Episode";
+import Character from './pages/Characters';
+import Locations from './pages/Location';
+import Episodes from './pages/Episode';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+    <Router>
+      
+      <div>
+        <div className="App-cont">
+            <div className="logo">
+              <div className="logo-img">
+                <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1598px-Rick_and_Morty.svg.png" height="100" width="350" alt={"character"}/></a>
+              </div>
+            </div>
+        </div>
+
+        <Switch>
+          <Route exact path="/Character" component={Character} />
+          <Route path="/Locations" component={Locations} />
+          <Route path="/Episodes" component={Episodes} />
+          <Route exact path="/" component={Categories} />
+        </Switch>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 
