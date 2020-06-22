@@ -6,9 +6,7 @@ import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import People from "./pages/Characters";
-import Films from "./pages/Location";
-import Species from "./pages/Episode";
+
 import Character from './pages/Characters';
 import Locations from './pages/Location';
 import Episodes from './pages/Episode';

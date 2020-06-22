@@ -7,10 +7,10 @@ function Character() {
     const [people, setPeople] = useState([]);
 
     useEffect(() => {
-        getPeople();
+        getCharacter();
       }, []);
 
-    const getPeople = async () => {
+    const getCharacter = async () => {
         try {
             let {data} = await axios.get("https://rickandmortyapi.com/api/character/", {});
             console.log("data", data)
