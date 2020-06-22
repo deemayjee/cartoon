@@ -21,16 +21,16 @@ function App() {
         <div className="App-cont">
             <div className="logo">
               <div className="logo-img">
-                <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1598px-Rick_and_Morty.svg.png" height="100" width="350" alt={"character"}/></a>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Rick_and_Morty.svg/1598px-Rick_and_Morty.svg.png" height="100" width="350" alt={"character"}/></a>
               </div>
             </div>
         </div>
 
         <Switch>
-          <Route exact path="/Character" component={Character} />
-          <Route path="/Locations" component={Locations} />
-          <Route path="/Episodes" component={Episodes} />
-          <Route exact path="/" component={Categories} />
+          <Route exact path="/character" component={Character} />
+          <Route path="/locations" component={Locations} />
+          <Route path="/episodes" component={Episodes} />
+          <Route exact path="#" component={Categories} />
         </Switch>
       </div>
       <Footer />
