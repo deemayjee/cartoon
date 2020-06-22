@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 
-import Character from './pages/Characters';
 import Locations from './pages/Locations';
 import Episodes from './pages/Episodes';
 import Characters from './pages/Characters';
